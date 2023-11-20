@@ -14,7 +14,7 @@ export function sortStrings(arr, param = 'asc') {
   }
   if (param === 'asc') {
     cloneArr.sort((a, b) => {
-      return a.localeCompare(b, 'kf', {caseFirst: 'upper'});
+      return a.localeCompare(b, 'ru-en', {caseFirst: 'upper'});
     });
   }
   return cloneArr;
