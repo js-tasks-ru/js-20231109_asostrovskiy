@@ -9,7 +9,7 @@ export function sortStrings(arr, param = 'asc') {
   const cloneArr = [...arr];
   if (param === 'desc') {
     return cloneArr.sort((a, b) => {
-      return b.localeCompare(a, 'kf', {caseFirst: 'upper'});
+      return b.localeCompare(a, ['ru', 'en'], {caseFirst: 'upper'});
     });
   }
   if (param === 'asc') {
